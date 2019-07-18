@@ -36,7 +36,7 @@ The developers working in any of the BetterSpace repos, are asked to agree to th
 
 - Developers will develop features and regularly generate Pull Requests (PR) to the master branch of the project. Branches will be labeled as: Developer/Feature
 
-- Code is expected to be committed with proper title and description, and signed by the developer (git commit -s) with Linux Kernel style. Please follow the format already on the repository with
+- Code is expected to be committed with proper title and description, and signed by the developer (git commit -s) with Linux Kernel style. Please follow the format already on the repository with  
 `[SECTION] Title (issue number if any) Sensible description of changes` Signed-off-by: developer@domain.com
 
 - Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
@@ -72,7 +72,7 @@ The employer will provide the following:
 
 ### Step 2: Kickoff
 A kickoff meeting takes place at the employer's office. Our team present the platform and the mission in front of all the employees.
-The goal of this meeting is to maximize impact and engagement with the pilot.
+The goal of this meeting is to maximize impact and engagement with the pilot.  
 Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format `company_name.betterspace.uk`.
 
 ### Step 3: Sign up
@@ -85,7 +85,12 @@ This step functions as a way to:
 
 
 ### Step 4: Pilot
-
+Participants will be able to spend their personal budget, provided by the employer, on any resource we will list on the directory.
+Our main goals are:
+1. 
+1. 
+1. 
+1. 
 
 ### Step 5: Results
 
