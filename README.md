@@ -1,13 +1,15 @@
 # Betterspace Documentation
 This is the full documentation of the BetterSpace platform. This document is written for developers, data scientists and any stakeholders that want to understand the development principles behind the BetterSpace platform.
 
+## Table of contents
+
 1. [Intro and mission](#intro-and-mission) 
 1. [What is BetterSpace](#what-is-betterspace) 
 1. [Repo guidelines](#repo-guidelines) 
-1. [User journey](#userjurney) 
-1. [Front end](#frontend) 
+1. [User journey](#user-jurney) 
+1. [Front end](#front-end) 
 1. [API](#api) 
-1. [Back end](#backend) 
+1. [Back end](#back-end) 
 1. [Data](#data) 
 
 
@@ -35,7 +37,7 @@ The developers working in any of the BetterSpace repos, are asked to agree to th
 - Developers will develop features and regularly generate Pull Requests (PR) to the master branch of the project. Branches will be labeled as: Developer/Feature
 
 - Code is expected to be committed with proper title and description, and signed by the developer (git commit -s) with Linux Kernel style. Please follow the format already on the repository with
-[SECTION] Title (issue number if any) Sensible description of changes Signed-off-by: developer@domain.com
+`[SECTION] Title (issue number if any) Sensible description of changes` Signed-off-by: developer@domain.com
 
 - Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
 
@@ -45,4 +47,18 @@ The developers working in any of the BetterSpace repos, are asked to agree to th
 
 - A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
 
+**[⬆ back to top](#table-of-contents)**
+
+## User Journey
+This section describes very briefly the journey that brings a company and its employees starting using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
+
+### Step 1: The Sale
+
+### Step 2: Kickoff
+
+### Step 3: Sign up
+
+### Step 4: Pilot
+
+### Step 5: Results
 
