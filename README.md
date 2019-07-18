@@ -63,14 +63,17 @@ Something that brings:
 - high morale for internal culture
 - somehitng great to tell new recruits
 
-Once the employers agrees to purchase the BetterSpace service, the employer will provide the following:
+Once the employers agrees to purchase the BetterSpace service, they will take part in a 100 days sprint.
+The employer will provide the following:
 1. Number of participants and a list emails that can sign up to the platform
 1. Budget amount per participant
 1. A list of resources they want to add or remove from the directory
 1. The date for the kick off
 
 ### Step 2: Kickoff
-
+A kickoff meeting takes place at the employer's office. Our team present the platform and the mission in front of all the employees.
+The goal of this meeting is to maximize impact and engagement with the pilot.
+Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format `company_name.betterspace.uk`.
 
 ### Step 3: Sign up
 
