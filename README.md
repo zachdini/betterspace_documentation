@@ -76,8 +76,16 @@ The goal of this meeting is to maximize impact and engagement with the pilot.
 Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format `company_name.betterspace.uk`.
 
 ### Step 3: Sign up
+Participants sign uo, receive a confirmation email and then they log in. Once logged in they have to go through a wellbeing assessment.
+This step functions as a way to:
+- provide a piece of literature around the mental health and the six pillars of wellbeing
+- let people spend 10 minutes of self reflection about their health
+- collect data on the users and feed the recommendation algorithm
+- collect data and review the directory creation
+
 
 ### Step 4: Pilot
+
 
 ### Step 5: Results
 
