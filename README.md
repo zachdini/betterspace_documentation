@@ -6,7 +6,7 @@ This is the full documentation of the BetterSpace platform. This document is wri
 1. [Intro and mission](#intro-and-mission) 
 1. [What is BetterSpace](#what-is-betterspace) 
 1. [Repo guidelines](#repo-guidelines) 
-1. [User journey](#user-jurney) 
+1. [User journey](#user-journey) 
 1. [Front end](#front-end) 
 1. [API](#api) 
 1. [Back end](#back-end) 
@@ -47,18 +47,36 @@ The developers working in any of the BetterSpace repos, are asked to agree to th
 
 - A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
 
-**[⬆ back to top](#table-of-contents)**
+**[🔝 back to top](#table-of-contents)**
 
 ## User Journey
 This section describes very briefly the journey that brings a company and its employees starting using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
 
-### Step 1: The Sale
+### Step 1: The sale
+Employers that express interest in BetterSpace usually follow in one of these two categories:
+- extremely progressive employers that have always sought the best solutions for their employees
+- extremely bad employers that have never cared about company culture and are now paying the debt on GlassDoor
+
+In both cases they are looking for the best solution to their employees wellbeing. 
+Something that brings: 
+- wellbeing outcome
+- high morale for internal culture
+- somehitng great to tell new recruits
+
+Once the employers agrees to purchase the BetterSpace service, the employer will provide the following:
+1. Number of participants and a list emails that can sign up to the platform
+1. Budget amount per participant
+1. A list of resources they want to add or remove from the directory
+1. The date for the kick off
 
 ### Step 2: Kickoff
+
 
 ### Step 3: Sign up
 
 ### Step 4: Pilot
 
 ### Step 5: Results
+
+**[🔝 back to top](#table-of-contents)**
 
