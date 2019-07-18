@@ -12,15 +12,15 @@ This is the full documentation of the BetterSpace platform. This document is wri
 
 
 
-##Intro and mission
+## Intro and mission
 
 Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the solutions we include, and inform our future technical development and customer experience. 
 
-##What is BetterSpace
+## What is BetterSpace
 
 BetterSpace is a workplace mental health service developed as a web based platform. The backend is hosted on a serverless architecture in AWS. The front end is a ReactJS single page webapp.
 
-##Repo guidelines
+## Repo guidelines
 This documentat is written for developers, data scientists and any stakeholder, willing to understand in details how the platform works.
 
 The developers working in any of the BetterSpace repos, are asked to agree to the following points:
