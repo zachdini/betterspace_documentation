@@ -1,17 +1,18 @@
 # Betterspace Documentation
 This is the full documentation of the BetterSpace platform. This document is written for developers, data scientists and any stakeholders that want to understand the development principles behind the BetterSpace platform.
 
-0. Intro
+1. [Intro and mission](#intro) 
 1. What is BetterSpace
-2. Repo guidelines
-3. User journey
-4. Front end
-5. API
-6. Back end
-7. Data
+1. Repo guidelines
+1. User journey
+1. Front end
+1. API
+1. Back end
+1. Data
 
 
-## Intro
+## Intro and mission
+  <a name="intro--primitives"></a><a name="1.1"></a>
 
 Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the solutions we include, and inform our future technical development and customer experience. 
 
