@@ -26,7 +26,9 @@ BetterSpace is a workplace mental health service developed as a web based platfo
 This documentat is written for developers, data scientists and any stakeholder, willing to understand in details how the platform works.
 
 The developers working in any of the BetterSpace repos, are asked to agree to the following points:
-- Tasks will be agreed at the beginning of coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
+- Write your code with love and passion, someone (Alfredo ?), will read it.
+
+- Tasks will be agreed all together at the beginning of coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
 
 - Developers should also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
 
@@ -37,7 +39,8 @@ The developers working in any of the BetterSpace repos, are asked to agree to th
 - Developers will develop features and regularly generate Pull Requests (PR) to the master branch of the project. Branches will be labeled as: Developer/Feature
 
 - Code is expected to be committed with proper title and description, and signed by the developer (git commit -s) with Linux Kernel style. Please follow the format already on the repository with  
-`[SECTION] Title (issue number if any) Sensible description of changes` Signed-off-by: developer@domain.com
+`[SECTION] Title (issue number if any) Sensible description of changes`  
+Signed-off-by: developer@domain.com
 
 - Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
 
@@ -73,7 +76,8 @@ The employer will provide the following:
 ### Step 2: Kickoff
 A kickoff meeting takes place at the employer's office. Our team present the platform and the mission in front of all the employees.
 The goal of this meeting is to maximize impact and engagement with the pilot.  
-Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format `company_name.betterspace.uk`.
+Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format  
+`company_name.betterspace.uk`.
 
 ### Step 3: Sign up
 Participants sign uo, receive a confirmation email and then they log in. Once logged in they have to go through a wellbeing assessment.
@@ -87,12 +91,25 @@ This step functions as a way to:
 ### Step 4: Pilot
 Participants will be able to spend their personal budget, provided by the employer, on any resource we will list on the directory.
 Our main goals are:
-1. 
-1. 
-1. 
-1. 
+1. Improve their wellbeing
+1. Leave them excited by the product
+1. Leave them relying on the platform as a source of trustful solutions, updated weekly
+1. Let them introspect via the platform
+1. Increase discussion and sharing while smashing stigma
+
+The activities that they can undertake on the platform are:
+- Read their wellbeing scores, compare the pillar where they are doing the best and the worse
+- Access a set of recommendations
+- Browse, discover and buy resources
+- Browse and rate past orders
+- Track their wellbeing
 
 ### Step 5: Results
+Participants are now using the resources, their wellbeing scores should start going up. Most of the budget is usually used. We want them to have enjoyed the service and be willing to spend their own money on the platform. Therefore we want them:
+- keeping discovering new resources
+- starting spending their own money
+- keeping them relying on BetterSpace
 
 **[🔝 back to top](#table-of-contents)**
 
+## Front end
