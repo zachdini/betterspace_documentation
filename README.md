@@ -1,6 +1,16 @@
 # Betterspace Documentation
 This is the full documentation of the BetterSpace platform. This document is written for developers, data scientists and any stakeholders that want to understand the development principles behind the BetterSpace platform.
 
+0. Intro
+1. What is BetterSpace
+2. Repo guidelines
+3. User journey
+4. Front end
+5. API
+6. Back end
+7. Data
+
+
 ## Intro
 
 Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the solutions we include, and inform our future technical development and customer experience. 
@@ -10,6 +20,9 @@ Approximately 1 in 4 people in the UK will experience a mental health problem ea
 BetterSpace is a workplace mental health service developed as a web based platform. The backend is hosted on a serverless architecture in AWS. The front end is a ReactJS single page webapp.
 
 ## Repo guidelines
+This documentat is written for developers, data scientists and any stakeholder, willing to understand in details how the platform works.
+
+The developers working in any of the BetterSpace repos, are asked to agree to the following points:
 - Tasks will be agreed at the beginning of coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
 
 - Developers should also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
@@ -30,3 +43,5 @@ BetterSpace is a workplace mental health service developed as a web based platfo
 - The maintainer (Alfredo) will validate the feature and let the code merge into the master branch after being agreed.
 
 - A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
+
+
