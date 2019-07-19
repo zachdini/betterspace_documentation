@@ -193,6 +193,8 @@ Any developer can play with the code by following the steps:
 1. Run the command `yarn install` to install all the packages
 1. Run the command `yarn start` to start the server and get the local version running
 1. Now you can create a new jsx file inside `/src/`. This file will contain your new component.
-1. In order to add this component to the whole project, please create the global `const`:  
-`const Header = props => <Async load={import('./Header.jsx')} componentProps={props}/>`
-1. Finally, add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function).
+1. In order to include this component to the whole project, please create the global `const`:  
+`const NewComponent = props => <Async load={import('./NewComponent.jsx')} componentProps={props}/>`
+1. Finally, add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function) as:  
+`<Route exact path="/NewComponentPath" component={NewComponent} />`  note the use of `exact` and `path`
+1. Create a button link somewhere in the project if you selected a new specific `path`
