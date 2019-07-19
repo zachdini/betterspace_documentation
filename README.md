@@ -53,7 +53,7 @@ Signed-off-by: developer@domain.com
 **[🔝 back to top](#table-of-contents)**
 
 ## User Journey
-This section describes very briefly the journey that brings a company and its employees starting using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
+This section describes very briefly the journey that brings a company and its employees to start using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
 
 ### Step 1: The sale
 Employers that express interest in BetterSpace usually follow in one of these two categories:
@@ -113,10 +113,12 @@ Participants are now using the resources, their wellbeing scores should start go
 **[🔝 back to top](#table-of-contents)**
 
 ## Front end
-The webapp front end is at the moment the signle place used by the participants and by the admin to access the platform.  
-It has been developed desktop-first as a few companies allowed the participants to access the platform only by the desktop.  
+The webapp front end is at the moment the signle place used by the participants and by the admin to access the platform. It has been developed desktop-first as a few companies allowed the participants to access the platform only by the desktop.  
+A thourough documentation of the front end can be found in the front end repository at: https://github.com/Belfio/betterspace_testing  
+
 We have used **ReactJS 16.8.6** to develop the whole structure of the website.  
 
+### Writing guidelines
 The code is written on **VS Code** using the following rules:
 ``` javascript
 {
@@ -147,7 +149,9 @@ The code is written on **VS Code** using the following rules:
   "editor.tabSize": 4
 }
 ```
-The linting of the code follows the AirBnB standard, with the following exceptions:
+
+
+The **linting** of the code follows the AirBnB standard, with the following exceptions:
 ```javascript
 module.exports = {
   extends: "airbnb",
@@ -168,3 +172,19 @@ module.exports = {
   },
 }
 ```
+
+### Libraries
+The webapp takes advantage of a few important libraries:
+- **React router 4.3.1**: it helps handling and moving through the different pages of the platform
+- **Redux 6.0.0**: it helps managing storing and changing the platform data
+- **Code splitter 1.2.1**: it splits the main javascript bundle  into different pieces so the brwoser loads one small package at the time
+- **AWS SDK 2.382.0**: it allows the front end to communicate with the back end
+
+### Folder organization and main architecture
+The `src` folder contains the following main folders:
+- `containers`: this folder contains one file per page. Each file represents one page and it contains all the business logic that gets passed to each single components. To each file it usually corresponds a folder inside the `components` folder, containing all the (usually stateless) components.
+- `components`: this folder contains all the UI components and their styles. Inside, the folder `common`, contains the main library that should be used throughout the whole webapp.
+- `assets`: is a folder that contains all the other files like - images, svgs, constants
+- `actions`, `reducers` and `store` are three folders that contains all the relevant files to make **Redux** work.
+
+### How to start
