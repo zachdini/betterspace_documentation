@@ -16,14 +16,14 @@ This is the full documentation of the BetterSpace platform. This document is wri
 
 ## Intro and mission
 
-Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the solutions we include, and inform our future technical development and customer experience. 
+Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the resources we include, and inform our future technical development and customer experience. 
 
 ## What is BetterSpace
 
 BetterSpace is a workplace mental health service developed as a web based platform. The backend is hosted on a serverless architecture in AWS. The front end is a ReactJS single page webapp.
 
 ## Repo guidelines
-This documentat is written for developers, data scientists and any stakeholder, willing to understand in details how the platform works.
+This documentation is written for developers, data scientists and any stakeholder, wanting to understand in detail how the platform works.
 
 The developers working in any of the BetterSpace repos, are asked to agree to the following points:
 - Write your code with love and passion, someone (Alfredo ?), will read it.
@@ -56,59 +56,59 @@ Signed-off-by: developer@domain.com
 This section describes very briefly the journey that brings a company and its employees to start using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
 
 ### Step 1: The sale
-Employers that express interest in BetterSpace usually follow in one of these two categories:
-- extremely progressive employers that have always sought the best solutions for their employees
+Employers that express interest in BetterSpace usually fall in one of these two categories:
+- extremely progressive employers that have always sought the best solutions for their employees, or
 - extremely bad employers that have never cared about company culture and are now paying the debt on GlassDoor
 
-In both cases they are looking for the best solution to their employees wellbeing. 
+In both cases they are looking for the best solution to their employees' wellbeing. 
 Something that brings: 
-- wellbeing outcome
+- improved employee wellbeing
 - high morale for internal culture
-- somehitng great to tell new recruits
+- something great to tell new recruits
 
-Once the employers agrees to purchase the BetterSpace service, they will take part in a 100 days sprint.
+Once the employers agree to purchase the BetterSpace service, they will take part in a 100 day sprint.
 The employer will provide the following:
-1. Number of participants and a list emails that can sign up to the platform
+1. Number of participants and a list of emails that can sign up to the platform
 1. Budget amount per participant
 1. A list of resources they want to add or remove from the directory
 1. The date for the kick off
 
 ### Step 2: Kickoff
-A kickoff meeting takes place at the employer's office. Our team present the platform and the mission in front of all the employees.
+A kickoff meeting takes place at the employer's office. Our team introduce the mission and the platform in front of all the employees.
 The goal of this meeting is to maximize impact and engagement with the pilot.  
-Once the pilot finishes, we send an email to all the participants with the instructions on how to log in. We provide the custom url usually in the format  
+Once the presentation finishes, we will send an email to all the participants with instructions on how to sign up and log in. We provide the custom url usually in the format  
 `company_name.betterspace.uk`.
 
 ### Step 3: Sign up
-Participants sign uo, receive a confirmation email and then they log in. Once logged in they have to go through a wellbeing assessment.
+Participants sign up, receive a confirmation email and then they log in. Once logged in, they have to go through a wellbeing assessment.
 This step functions as a way to:
-- provide a piece of literature around the mental health and the six pillars of wellbeing
-- let people spend 10 minutes of self reflection about their health
-- collect data on the users and feed the recommendation algorithm
-- collect data and review the directory creation
+- provide a piece of literature around mental health and the six pillars of wellbeing
+- allow 10 minutes of self-reflection about their own health
+- collect data on the users for the recommendation algorithm
+- collect data for review of the directory creation
 
 
 ### Step 4: Pilot
-Participants will be able to spend their personal budget, provided by the employer, on any resource we will list on the directory.
+Participants will be able to spend their personal budget, provided by their employer, on any resource we will list on the directory.
 Our main goals are:
 1. Improve their wellbeing
 1. Leave them excited by the product
-1. Leave them relying on the platform as a source of trustful solutions, updated weekly
+1. Leave them relying on the platform as a source of trustful resources, updated weekly
 1. Let them introspect via the platform
-1. Increase discussion and sharing while smashing stigma
+1. Increase discussion and sharing while smashing the stigma
 
-The activities that they can undertake on the platform are:
-- Read their wellbeing scores, compare the pillar where they are doing the best and the worse
-- Access a set of recommendations
+The activities that they can undertake on the platform include:
+- Reading their wellbeing scores, compare their strongest pillars and where they may need improvement
+- Accessing a set of recommendations
 - Browse, discover and buy resources
-- Browse and rate past orders
+- Browse and rate completed resources
 - Track their wellbeing
 
 ### Step 5: Results
-Participants are now using the resources, their wellbeing scores should start going up. Most of the budget is usually used. We want them to have enjoyed the service and be willing to spend their own money on the platform. Therefore we want them:
-- keeping discovering new resources
-- starting spending their own money
-- keeping them relying on BetterSpace
+After completing their resources, their wellbeing scores should see an improvement. Most of their budget is usually used. We want them to have enjoyed the service and be willing to spend their own money on the platform. Therefore, we want them to:
+- keep discovering new resources
+- start spending their own money
+- use BetterSpace as their first point of direction towards better health
 
 **[🔝 back to top](#table-of-contents)**
 
