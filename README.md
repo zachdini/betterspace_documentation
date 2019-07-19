@@ -192,8 +192,7 @@ Any developer can play with the code by following the steps:
 1. Open the terminal, fork the front end repo https://github.com/Belfio/betterspace_testing and enter into the folder
 1. Run the command `yarn install` to install all the packages
 1. Run the command `yarn start` to start the server and get the local version running
-
-Now you can create a new jsx file inside `/src/`. This file will contain your new component. In order to add this component to the whole project, please create the global `const`  
-const Header = props => <Async load={import('./Header.jsx')} componentProps={props}/>
-
-and add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function).
+1. Now you can create a new jsx file inside `/src/`. This file will contain your new component.
+1. In order to add this component to the whole project, please create the global `const`:  
+`const Header = props => <Async load={import('./Header.jsx')} componentProps={props}/>`
+1. Finally, add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function).
