@@ -28,9 +28,9 @@ This documentat is written for developers, data scientists and any stakeholder, 
 The developers working in any of the BetterSpace repos, are asked to agree to the following points:
 - Write your code with love and passion, someone (Alfredo ?), will read it.
 
-- Tasks will be agreed all together at the beginning of coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
+- Tasks will be agreed all together at the beginning of the coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
 
-- Developers should also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
+- Developers, please (!), also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
 
 - The code repository lives at Github (https://github.com/Belfio/betterspace_testing)
 
@@ -113,3 +113,58 @@ Participants are now using the resources, their wellbeing scores should start go
 **[🔝 back to top](#table-of-contents)**
 
 ## Front end
+The webapp front end is at the moment the signle place used by the participants and by the admin to access the platform.  
+It has been developed desktop-first as a few companies allowed the participants to access the platform only by the desktop.  
+We have used **ReactJS 16.8.6** to develop the whole structure of the website.  
+
+The code is written on **VS Code** using the following rules:
+``` javascript
+{
+  "eslint.enable": true,
+  "python.linting.lintOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "autoimport.semicolon": false,
+  "prettier.eslintIntegration": true,
+  "prettier.semi": false,
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "terminal.integrated.rendererType": "dom",
+  "python.pythonPath": "/Users/alfredobelfiori/miniconda3/python.app",
+  "python.linting.pylintEnabled": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "window.zoomLevel": 0,
+  "code-runner.executorMap": {
+    "python": "$pythonPath -u $fullFileName"
+  },
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true,
+  "prettier.trailingComma": "all",
+  "editor.tabSize": 4
+}
+```
+The linting of the code follows the AirBnB standard, with the following exceptions:
+```javascript
+module.exports = {
+  extends: "airbnb",
+  rules: {
+    semi: [2, "never"],
+    "no-shadow": "off",
+    // Indent with 4 spaces
+    "indent": ["error", 4],
+
+    // Indent JSX with 4 spaces
+    "react/jsx-indent": ["error", 4],
+
+    // Indent props with 4 spaces
+    "react/jsx-indent-props": ["error", 4],
+    "ignoredNodes": [
+      "JSXAttribute"
+    ]
+  },
+}
+```
