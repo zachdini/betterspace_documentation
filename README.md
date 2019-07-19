@@ -116,7 +116,7 @@ After completing their resources, their wellbeing scores should see an improveme
 The webapp front end is at the moment the signle place used by the participants and by the admin to access the platform. It has been developed desktop-first as a few companies allowed the participants to access the platform only by the desktop.  
 A thourough documentation of the front end can be found in the front end repository at: https://github.com/Belfio/betterspace_testing  
 
-We have used **ReactJS 16.8.6** to develop the whole structure of the website.  
+We have used **ReactJS 16.8.6** to develop the whole structure of the website and **ES6** as the JavaScript standard.
 
 ### Writing guidelines
 The code is written on **VS Code** using the following rules:
@@ -188,3 +188,12 @@ The `src` folder contains the following main folders:
 - `actions`, `reducers` and `store` are three folders that contains all the relevant files to make **Redux** work.
 
 ### How to start
+Any developer can play with the code by following the steps:
+1. Open the terminal, fork the front end repo https://github.com/Belfio/betterspace_testing and enter into the folder
+1. Run the command `yarn install` to install all the packages
+1. Run the command `yarn start` to start the server and get the local version running
+
+Now you can create a new jsx file inside `/src/`. This file will contain your new component. In order to add this component to the whole project, please create the global `const`  
+const Header = props => <Async load={import('./Header.jsx')} componentProps={props}/>
+
+and add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function).
