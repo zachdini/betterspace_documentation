@@ -198,3 +198,91 @@ Any developer can play with the code by following the steps:
 1. Finally, add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function) as:  
 `<Route exact path="/NewComponentPath" component={NewComponent} />`  note the use of `exact` and `path`
 1. Create a button link somewhere in the project if you selected a new specific `path`
+
+
+## API
+The back end infrastructure talks to the front end via RESTful API (GET and POST requestes).  
+Every request needs an authentication token that will be used by the back end to grant access to the user or admin only nodes.
+
+The list of nodes available and it's functions are:
+
+
+```
+    ASSESSMENT: {
+        POST
+        GET: 'user_id',
+        GET_ADMIN_ALL: '',
+ 
+    ASSESSMENT_UPDATE: {
+        POST: 'user_id',
+        GET: 'user_id',
+        GET_ADMIN_ALL: '',
+    },
+    PROFILE: {
+        GET: 'user_id',
+        POST: 'user_id',
+        UPDATE: '/production/user/{user_id}',
+        GET_ADMIN_ALL: '/production/admin',
+        GET_ADMIN: '/production/admin/{user_id}',
+        POST_ADMIN: '/production/admin/{user_id}',
+    },
+    TRANSACTION: {
+        POST: 'user_id',
+        GET: 'user_id',
+        UPDATE: '/production/transaction/admin/update',
+        GET_ADMIN_ALL: '/production/transaction/admin',
+        GET_ADMIN: '/production/transaction/admin/{user_id}',
+        POST_ADMIN: '/production/transaction/admin/{user_id}',
+        CANCEL: '/production/transaction/user/cancel',
+    },
+    ACTIVITIES: {
+        POST: '',
+        GET: '',
+    },
+    ACTIVITY: {
+        TEMPLATE_POST: '/production/recommendation',
+        TEMPLATE_UPDATE: '/production/recommendation/update',
+        TEMPLATE_GET: '/production/recommendation/{solutionId}',
+        TEMPLATE_DELETE: '/production/recommendation/delete',
+    },
+    LIKE: {
+        TEMPLATE_POST: '/production/likes/like/{user_id}',
+    },
+    RATING: {
+        URL: 'https://3z6uzqqlc0.execute-api.eu-west-2.amazonaws.com',
+        URL_POSTPONE: 'https://gr2s5mimp4.execute-api.eu-west-2.amazonaws.com',
+        TEMPLATE_POST: '/production/ratings/user/{user_id}',
+        TEMPLATE_POSTPONE: '/production/transaction/user/update/{user_id}',
+        TEMPLATE_ADMIN_GET_ALL: '/production/ratings',
+        TEMPLATE_GET: '/production/ratings/user/{user_id}',
+    },
+    ANALYTICS: {
+        TEMPLATE_POST: '/production/analytics/user/{user_id}',
+        TEMPLATE_ADMIN_GET_ALL: '/production/analytics',
+    },
+    HOME: {
+        TEMPLATE_GET: '/production/dashborad',
+    },
+    BUDGET: {
+        TEMPLATE_POST: '/dev/payment/user',
+        TEMPLATE_REFUND: '/dev/refund/user',
+    },
+}
+```
+
+
+## Back end 
+The back end infrastructure is fully hosted on AWS. Here a visual representation of all the used services.
+
+In chronological order, the client communicates with the back end using the following services:  
+
+- `Cloudfront`: it handles the dns requests, the SSL certificates and the different urls for the different companies
+- `S3`: it hosts the full website platform and it is accessible by everyone
+- `Cognito`: it manages the user authentication
+- `API Gateway`: it is the key point of contact for authenticated users, here the API nodes trigger the micro services that will store, get, modify or remove data from the database.
+- `DynamoDB`: NoSQL database, it stores the data in a format similar to JSON. API Gateway access the DynamoDB always via a Lambda function.
+- `Lambda Functions`: they are the key component of the micro services. They are triggered by many services in the infrastructure and can trigger additional services, modify and store data in the databases. API Gateway is always connected to DynamoDB via Lambda functions.
+- `CodePipeline`: this service helps the deployment of new code by creating deployment steps. Once a new piece of code for the front end or for the back end is ready, it gets pushed to the GitHub repo. CodePipeline will pick the repo update and will deploy automatically the new code into a testing environment (currently hosted on team.betterspace.uk). The developers will be able to live test the new codebase and in case the code has no bugs and fullfills the requirements, CodePipeline will allow to push the code to the production stage where, and deployed to all the clients urls.
+
+
+The infrastructure uses 2 external services for payment and billing, `Stripe` and `Xero`.
