@@ -202,52 +202,58 @@ Any developer can play with the code by following the steps:
 
 ## API
 The back end infrastructure talks to the front end via RESTful API (GET and POST requestes).  
-Every request needs an authentication token that will be used by the back end to grant access to the user or admin only nodes.
+Every request needs an authentication session token that will be used by the back end to grant access to the user or admin only nodes.
 
 The list of nodes available and it's functions are:
 
 
-```
-    ASSESSMENT: {
-        POST (JSON) users and admin can post a full wellbeing assessment
+```javascript
+    ASSESSMENT = {
+        POST: (JSON) users and admin can post a full wellbeing assessment,
         GET: (array[JSON]) users and admin can get their own wellbeing assessments,
         GET_ADMIN_ALL: (array[JSON]) admin can get all the wellbeing assessments,
- 
-    ASSESSMENT_UPDATE: {
-        POST: (JSON) users and admin can post a full wellbeing assessment,
-        GET: (array[JSON]) users and admin can get their own wellbeing assessments,
-        GET_ADMIN_ALL: (array[JSON]) admin can get all the wellbeing updates,,
     },
-    PROFILE: {
-        POST: (JSON) users and admin can post a full wellbeing assessment,
-        GET: (JSON) users and admin can get their own wellbeing assessments,
-        UPDATE: '/production/user/{user_id}',
-        GET_ADMIN_ALL: '/production/admin',
-        GET_ADMIN: '/production/admin/{user_id}',
-        POST_ADMIN: '/production/admin/{user_id}',
-    },
-    TRANSACTION: {
-        POST: 'user_id',
-        GET: 'user_id',
-        UPDATE: '/production/transaction/admin/update',
-        GET_ADMIN_ALL: '/production/transaction/admin',
-        GET_ADMIN: '/production/transaction/admin/{user_id}',
-        POST_ADMIN: '/production/transaction/admin/{user_id}',
-        CANCEL: '/production/transaction/user/cancel',
-    },
-    ACTIVITIES: {
-        POST: '',
-        GET: '',
-    },
-    ACTIVITY: {
-        TEMPLATE_POST: '/production/recommendation',
-        TEMPLATE_UPDATE: '/production/recommendation/update',
-        TEMPLATE_GET: '/production/recommendation/{solutionId}',
-        TEMPLATE_DELETE: '/production/recommendation/delete',
-    },
-    LIKE: {
-        TEMPLATE_POST: '/production/likes/like/{user_id}',
-    },
+
+    ASSESSMENT_UPDAT = {
+        POST: (JSON) users and admin can post a wellbeing update,
+        GET: (array[JSON]) users and admin can get their own wellbeing update,
+        GET_ADMIN_ALL: (array[JSON]) admin can get all the wellbeing updates,
+    }
+
+    PROFILE = {
+        POST: (JSON) users and admin can post their profile,
+        GET: (JSON) users and admin can get their own profile,
+        UPDATE: (JSON) users and admin can update their profile,
+        GET_ADMIN_ALL: (array[JSON]) admin can get all the profiles,
+        GET_ADMIN: (JSON) admin can get a specific profile specifying the `user_id`,
+        POST_ADMIN: (JSON) admin can post/update a specific profile specifying the `user_id`,
+    }
+
+    TRANSACTION = {
+        POST: (JSON) users and admin can post a new transaction,
+        GET: (arrasy[JSON]) users and admin can get all their transactions,
+        UPDATE: (JSON) users and admin can update a specific transaction -- DOUBLE CHECK WHAT ARE THE OPEN FIELDS,
+        GET_ADMIN_ALL: (array[JSON]) admin can get all the transactions and can specify the `pilotTag`,
+        GET_ADMIN: (array[JSON]) admin can get all the transactions of a specific users specifying the 'user_id',
+        POST_ADMIN: (JSON) admin can post/update a transaction specifying the `user_id`,
+        CANCEL: users and admin can cancel a transaction,
+    }
+
+    ACTIVITIES = {
+        GET: (array[JSON]) users and admin can get all the activities and specify the pilotTag,
+    }
+
+    ACTIVITY = {
+        POST: (JSON) admin can post a new activity,
+        UPDATE: (JSON) admin can update an activity,
+        GET: (JSON) users and admin can get a specific activity,
+        DELETE: (JSON) admin can delete an activity,,
+    }
+
+    LIKE =  {
+        POST: '/production/likes/like/{user_id}',
+    }
+
     RATING: {
         URL: 'https://3z6uzqqlc0.execute-api.eu-west-2.amazonaws.com',
         URL_POSTPONE: 'https://gr2s5mimp4.execute-api.eu-west-2.amazonaws.com',
@@ -255,19 +261,22 @@ The list of nodes available and it's functions are:
         TEMPLATE_POSTPONE: '/production/transaction/user/update/{user_id}',
         TEMPLATE_ADMIN_GET_ALL: '/production/ratings',
         TEMPLATE_GET: '/production/ratings/user/{user_id}',
-    },
+    }
+
     ANALYTICS: {
         TEMPLATE_POST: '/production/analytics/user/{user_id}',
         TEMPLATE_ADMIN_GET_ALL: '/production/analytics',
-    },
+    }
+
     HOME: {
         TEMPLATE_GET: '/production/dashborad',
-    },
+    }
+
     BUDGET: {
         TEMPLATE_POST: '/dev/payment/user',
         TEMPLATE_REFUND: '/dev/refund/user',
-    },
-}
+    }
+
 ```
 
 
