@@ -251,30 +251,30 @@ The list of nodes available and it's functions are:
     }
 
     LIKE =  {
-        POST: '/production/likes/like/{user_id}',
+        POST: (JSON) admin can post a like,
+        GET: (JSON) admin can get all the likes,
+        DELETE: (JSON) admin can delete all the likes,
     }
 
-    RATING: {
-        URL: 'https://3z6uzqqlc0.execute-api.eu-west-2.amazonaws.com',
-        URL_POSTPONE: 'https://gr2s5mimp4.execute-api.eu-west-2.amazonaws.com',
-        TEMPLATE_POST: '/production/ratings/user/{user_id}',
-        TEMPLATE_POSTPONE: '/production/transaction/user/update/{user_id}',
-        TEMPLATE_ADMIN_GET_ALL: '/production/ratings',
-        TEMPLATE_GET: '/production/ratings/user/{user_id}',
+    RATING = {
+        POST:  (JSON) admin and users can post a rating,
+        POSTPONE:  (JSON) admin and users can postpone a rating,
+        ADMIN_GET_ALL: (array[JSON]) admin can get all the ratings,
+        GET: (array[JSON]) admin and users can get their own ratings,
     }
 
-    ANALYTICS: {
-        TEMPLATE_POST: '/production/analytics/user/{user_id}',
-        TEMPLATE_ADMIN_GET_ALL: '/production/analytics',
+    ANALYTICS = {
+        POST: (JSON) admin and users can post an analytic,
+        ADMIN_GET_ALL: (array[JSON]) admin can get all the analytics,
     }
 
-    HOME: {
-        TEMPLATE_GET: '/production/dashborad',
+    HOME = {
+        GET: (JSON) admin and users can get an home data,
     }
 
-    BUDGET: {
-        TEMPLATE_POST: '/dev/payment/user',
-        TEMPLATE_REFUND: '/dev/refund/user',
+    BUDGET = {
+        POST: (JSON) admin and users need to post the amount of budget to add,
+        REFUND: (JSON) admin and users need to post the amount of budget to withdraw,
     }
 
 ```
