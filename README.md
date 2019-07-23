@@ -209,18 +209,18 @@ The list of nodes available and it's functions are:
 
 ```
     ASSESSMENT: {
-        POST
-        GET: 'user_id',
-        GET_ADMIN_ALL: '',
+        POST (JSON) users and admin can post a full wellbeing assessment
+        GET: (array[JSON]) users and admin can get their own wellbeing assessments,
+        GET_ADMIN_ALL: (array[JSON]) admin can get all the wellbeing assessments,
  
     ASSESSMENT_UPDATE: {
-        POST: 'user_id',
-        GET: 'user_id',
-        GET_ADMIN_ALL: '',
+        POST: (JSON) users and admin can post a full wellbeing assessment,
+        GET: (array[JSON]) users and admin can get their own wellbeing assessments,
+        GET_ADMIN_ALL: (array[JSON]) admin can get all the wellbeing updates,,
     },
     PROFILE: {
-        GET: 'user_id',
-        POST: 'user_id',
+        POST: (JSON) users and admin can post a full wellbeing assessment,
+        GET: (JSON) users and admin can get their own wellbeing assessments,
         UPDATE: '/production/user/{user_id}',
         GET_ADMIN_ALL: '/production/admin',
         GET_ADMIN: '/production/admin/{user_id}',
@@ -288,6 +288,6 @@ In chronological order, the client communicates with the back end using the foll
 
 The infrastructure uses 2 external services for payment and billing, `Stripe` and `Xero`.
 
-Finally, the BetterSpace infrastructure is organised under AWS Organisations service that manages and monitors 3 physically separable accounts: a development account, a quality assurance (QA) account, and a production account. These three accounts are controlled by an admin account that performs business related tasks such as consolidated billing to monitor the spending of the three different accounts under the organisation and applies admin or super user restrictions and policies to the users in the organisation.
+Finally, the BetterSpace infrastructure is organised under `AWS Organisations` service that manages and monitors 3 physically separable accounts: a development account, a quality assurance (QA) account, and a production account. These three accounts are controlled by an admin account that performs business related tasks such as consolidated billing to monitor the spending of the three different accounts under the organisation and applies admin or super user restrictions and policies to the users in the organisation.
 
 A new developer comes under ‘developers’ group in the development account and is given restricted access to services . These restrictions are applied either by an admin in the development account and/or by an admin in the organisation.
