@@ -7,6 +7,7 @@ This is the full documentation of the BetterSpace platform. This document is wri
 1. [What is BetterSpace](#what-is-betterspace) 
 1. [Repo guidelines](#repo-guidelines) 
 1. [User journey](#user-journey) 
+1. [Learning](#learning) 
 1. [Front end](#front-end) 
 1. [API](#api) 
 1. [Back end](#back-end) 
@@ -109,6 +110,21 @@ After completing their resources, their wellbeing scores should see an improveme
 - keep discovering new resources
 - start spending their own money
 - use BetterSpace as their first point of direction towards better health
+
+**[🔝 back to top](#table-of-contents)**
+
+## Learning
+This section is aimed at listing some useful resources we have used to create this platform.   
+  
+  ***These reads are higly recommended.***  
+
+Please feel free to ask Alfredo about any of these.
+- `Agile`: [Lean Startup](/learn/TheLeanStartUp.epub), [Agile Project Management](/learn/AgileProjectManagementForDummies.epub)
+- `Human Centered Design`: [Double Diamond](https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond),
+- `Coding`: [Javascript](https://github.com/getify/You-Dont-Know-JS), [Clean Code](/learnl/CleanCode.pdf),
+- `Front-end`: [HTML/CSS](https://developer.mozilla.org/en-US/docs/Learn), [HTML/CSS](https://internetingishard.com/html-and-css/), [CSS tricks](https://css-tricks.com/almanac/), [React](/learn/Learning_React-EN.pdf), [React-Router](https://reacttraining.com/react-router/web/guides/quick-start), [React-Redux](https://react-redux.js.org/introduction/quick-start),
+- `Back-end`: [Designing Data Intensive Applications](/learn/DesigningData-IntensiveApplications.pdf)
+
 
 **[🔝 back to top](#table-of-contents)**
 
