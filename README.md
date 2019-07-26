@@ -118,61 +118,6 @@ A thourough documentation of the front end can be found in the front end reposit
 
 We have used **ReactJS 16.8.6** to develop the whole structure of the website and **ES6** as the JavaScript standard.
 
-### Writing guidelines
-The code is written on **VS Code** using the following rules:
-``` javascript
-{
-  "eslint.enable": true,
-  "python.linting.lintOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "autoimport.semicolon": false,
-  "prettier.eslintIntegration": true,
-  "prettier.semi": false,
-  "workbench.statusBar.visible": true,
-  "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": false,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.wordWrap": "on",
-  "terminal.integrated.rendererType": "dom",
-  "python.pythonPath": "/Users/alfredobelfiori/miniconda3/python.app",
-  "python.linting.pylintEnabled": true,
-  "workbench.colorTheme": "One Dark Pro",
-  "window.zoomLevel": 0,
-  "code-runner.executorMap": {
-    "python": "$pythonPath -u $fullFileName"
-  },
-  "code-runner.showExecutionMessage": false,
-  "code-runner.clearPreviousOutput": true,
-  "prettier.trailingComma": "all",
-  "editor.tabSize": 4
-}
-```
-
-
-The **linting** of the code follows the AirBnB standard, with the following exceptions:
-```javascript
-module.exports = {
-  extends: "airbnb",
-  rules: {
-    semi: [2, "never"],
-    "no-shadow": "off",
-    // Indent with 4 spaces
-    "indent": ["error", 4],
-
-    // Indent JSX with 4 spaces
-    "react/jsx-indent": ["error", 4],
-
-    // Indent props with 4 spaces
-    "react/jsx-indent-props": ["error", 4],
-    "ignoredNodes": [
-      "JSXAttribute"
-    ]
-  },
-}
-```
-
 ### Libraries
 The webapp takes advantage of a few important libraries:
 - **React router 4.3.1**: it helps handling and moving through the different pages of the platform
@@ -194,11 +139,17 @@ Any developer can play with the code by following the steps:
 1. Run the command `yarn start` to start the server and get the local version running
 1. Now you can create a new jsx file inside `/src/`. This file will contain your new component.
 1. In order to include this component to the whole project, please create the global `const`:  
-`const NewComponent = props => <Async load={import('./NewComponent.jsx')} componentProps={props}/>`
+    ```
+    const NewComponent = props => <Async load={import('./NewComponent.jsx')} componentProps={props}/>
+    ```
 1. Finally, add it to the `render()` in your desired position (check Router `Switch` functionality and the`isAuthenticated()` function) as:  
-`<Route exact path="/NewComponentPath" component={NewComponent} />`  note the use of `exact` and `path`
+    ```
+    <Route exact path="/NewComponentPath" component={NewComponent} />
+    ```  
+    note the use of `exact` and `path`
 1. Create a button link somewhere in the project if you selected a new specific `path`
 
+**[🔝 back to top](#table-of-contents)**
 
 ## API
 The back end infrastructure talks to the front end via RESTful API (GET and POST requestes).  
@@ -279,11 +230,12 @@ The list of nodes available and it's functions are:
 
 ```
 
+**[🔝 back to top](#table-of-contents)**
 
 ## Back end 
-The back end infrastructure is fully hosted on AWS. Here a visual representation of all the used services.
+The back end infrastructure is fully hosted on AWS. Here is a visual representation of all the used services.
 
-![alt text](./Infrastructure-architecture.png)
+![BetterSpace Cloud Infrastructure](./Infrastructure-architecture.png)
 
 In chronological order, the client communicates with the back end using the following services:  
 
@@ -300,3 +252,21 @@ In chronological order, the client communicates with the back end using the foll
 The infrastructure uses 2 external services for payment and billing, `Stripe` and `Xero`.
 
 A new developer comes under ‘developers’ group in the development account and is given restricted access to services . These restrictions are applied either by an admin in the development account and/or by an admin in the organisation.
+
+**[🔝 back to top](#table-of-contents)**
+
+
+## Data
+The platform collects users data and stores it in `DynamoDB`.  
+It contains the following tables:  
+
+
+- `wellbeing assessment`: user wellbeing assessments
+- `wellbeing assessment update`: bi-monthly wellbeing assessment updates
+- `ratings`: transaction ratings
+- `profile`: user profiles
+- `analytics`: all the clicks of the user in the platform
+- `dashboard`: is a dynamic table that gets updated by lambda functions
+- `recommendationsDB`: the directory
+- `transactions`: user's transactions
+
