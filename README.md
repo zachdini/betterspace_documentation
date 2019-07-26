@@ -121,9 +121,9 @@ This section is aimed at listing some useful resources we have used to create th
 Please feel free to ask Alfredo about any of these.
 - `Agile`: [Lean Startup](/learn/TheLeanStartUp.epub), [Agile Project Management](/learn/AgileProjectManagementForDummies.epub)
 - `Human Centered Design`: [Double Diamond](https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond),
-- `Coding`: [Javascript](https://github.com/getify/You-Dont-Know-JS), [Clean Code](/learnl/CleanCode.pdf),
-- `Front-end`: [HTML/CSS](https://developer.mozilla.org/en-US/docs/Learn), [HTML/CSS](https://internetingishard.com/html-and-css/), [CSS tricks](https://css-tricks.com/almanac/), [React](/learn/Learning_React-EN.pdf), [React-Router](https://reacttraining.com/react-router/web/guides/quick-start), [React-Redux](https://react-redux.js.org/introduction/quick-start),
-- `Back-end`: [Designing Data Intensive Applications](/learn/DesigningData-IntensiveApplications.pdf), [Micro Services](https://martinfowler.com/articles/microservices.html),
+- `Coding`: [Javascript](https://github.com/getify/You-Dont-Know-JS), [Clean Code](/learn/CleanCode.pdf),
+- `Front-end`: [HTML/CSS](https://developer.mozilla.org/en-US/docs/Learn), [HTML/CSS](https://internetingishard.com/html-and-css/), [CSS tricks](https://css-tricks.com/almanac/), [React](/learn/Learning_React-EN.pdf), [React-Router](https://reacttraining.com/react-router/web/guides/quick-start), [React-Redux](https://react-redux.js.org/introduction/quick-start), [Cypress](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Cypress-Is-Simple), [JEST](https://jestjs.io/docs/en/getting-started.html)
+- `Back-end`: [AWS Architecture](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Designing Data Intensive Applications](/learn/DesigningData-IntensiveApplications.pdf), [Micro Services](https://martinfowler.com/articles/microservices.html),
 
 
 **[🔝 back to top](#table-of-contents)**
