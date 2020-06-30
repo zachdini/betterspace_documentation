@@ -4,14 +4,42 @@ This is the full documentation of the BetterSpace platform. This document is wri
 ## Table of contents
 
 1. [Intro and mission](#intro-and-mission) 
-1. [What is BetterSpace](#what-is-betterspace) 
-1. [Repo guidelines](#repo-guidelines) 
-1. [User journey](#user-journey) 
+    1. [What is BetterSpace](#what-is-betterspace) 
+    1. [User journey](#user-journey) 
+1. [Best Practices](#best-practices) 
+    1. [Code](#code)
+    1. [Data](#data)
+    1. [Endpoints](#dendpoints)
+    1. [Components](#components)
+    1. [Designs](#designs)
+    1. [Monitoring](#monitoring)
+    1. [Logs](#logs)
+    1. [Tests](#tests)
+    1. [Deployment](#deployment)
+    1. [Policies and Security](#policies-and-security)
+    1. [Costs](#costs)
+    1. [Risks](#risks)
+    1. [Backlog](#backlog)
 1. [Learning](#learning) 
-1. [Front end](#front-end) 
-1. [API](#api) 
-1. [Back end](#back-end) 
-1. [Data](#data) 
+1. [Front end overview](#front-end) 
+1. [Back end overview](#back-end) 
+1. [Endpoints overview](#api) 
+1. [Data overview](#data) 
+1. [Workloads](#workloads) 
+    1. [Login/Signup](#login-signup) 
+    1. [Assessment](#assessment) 
+    1. [Ratings](#ratings) 
+    1. [Transactions](#transactions) 
+    1. [Directory](#directory) 
+    1. [Profile](#profile) 
+    1. [PostSales](#postSales) 
+    1. [Budget](#budget) 
+    1. [Monitoring](#monitoring) 
+    1. [Notifications](#notifications) 
+    1. [Dashboard](#dashboard) 
+
+
+
 
 
 
@@ -19,44 +47,14 @@ This is the full documentation of the BetterSpace platform. This document is wri
 
 Approximately 1 in 4 people in the UK will experience a mental health problem each year. BetterSpace is building a wellbeing recommendation algorithm to help people find what is most likely to help their mental health. It’s a big project, and we’re developing the key areas of the functionality through a series of pilots with several companies over the next 6 months. The pilot will test the basic functionality, from data capture to the resources we include, and inform our future technical development and customer experience. 
 
-## What is BetterSpace
+### What is BetterSpace
 
 BetterSpace is a workplace mental health service developed as a web based platform. The backend is hosted on a serverless architecture in AWS. The front end is a ReactJS single page webapp.
 
-## Repo guidelines
-This documentation is written for developers, data scientists and any stakeholder, wanting to understand in detail how the platform works.
-
-The developers working in any of the BetterSpace repos, are asked to agree to the following points:
-- Write your code with love and passion, someone (Alfredo ?), will read it.
-
-- Tasks will be agreed all together at the beginning of the coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks using Wrike (https://www.wrike.com/workspace.htm)
-
-- Developers, please (!), also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
-
-- The code repository lives at Github (https://github.com/Belfio/betterspace_testing)
-
-- The developers will have to provide a user name to alfredo@betterspace.uk in order to gain access and to be able to fork the project.
-
-- Developers will develop features and regularly generate Pull Requests (PR) to the master branch of the project. Branches will be labeled as: Developer/Feature
-
-- Code is expected to be committed with proper title and description, and signed by the developer (git commit -s) with Linux Kernel style. Please follow the format already on the repository with  
-`[SECTION] Title (issue number if any) Sensible description of changes`  
-Signed-off-by: developer@domain.com
-
-- Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
-
-- Only PR features in a working state, rebase and test before commit. Don’t break others people builds.
-
-- The maintainer (Alfredo) will validate the feature and let the code merge into the master branch after being agreed.
-
-- A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
-
-**[🔝 back to top](#table-of-contents)**
-
-## User Journey
+### User Journey
 This section describes very briefly the journey that brings a company and its employees to start using our platform. Developers should derive from here the relationship among all the stakeholders, and what drives them using and promoting BetterSpace.
 
-### Step 1: The sale
+#### Step 1: The sale
 Employers that express interest in BetterSpace usually fall in one of these two categories:
 - extremely progressive employers that have always sought the best solutions for their employees, or
 - extremely bad employers that have never cared about company culture and are now paying the debt on GlassDoor
@@ -74,13 +72,13 @@ The employer will provide the following:
 1. A list of resources they want to add or remove from the directory
 1. The date for the kick off
 
-### Step 2: Kickoff
+#### Step 2: Kickoff
 A kickoff meeting takes place at the employer's office. Our team introduce the mission and the platform in front of all the employees.
 The goal of this meeting is to maximize impact and engagement with the pilot.  
 Once the presentation finishes, we will send an email to all the participants with instructions on how to sign up and log in. We provide the custom url usually in the format  
 `company_name.betterspace.uk`.
 
-### Step 3: Sign up
+#### Step 3: Sign up
 Participants sign up, receive a confirmation email and then they log in. Once logged in, they have to go through a wellbeing assessment.
 This step functions as a way to:
 - provide a piece of literature around mental health and the six pillars of wellbeing
@@ -89,7 +87,7 @@ This step functions as a way to:
 - collect data for review of the directory creation
 
 
-### Step 4: Pilot
+#### Step 4: Pilot
 Participants will be able to spend their personal budget, provided by their employer, on any resource we will list on the directory.
 Our main goals are:
 1. Improve their wellbeing
@@ -112,6 +110,82 @@ After completing their resources, their wellbeing scores should see an improveme
 - use BetterSpace as their first point of direction towards better health
 
 **[🔝 back to top](#table-of-contents)**
+
+
+## Best Practices
+This documentation is written for developers, data scientists and any stakeholder, wanting to understand in detail how the platform works.
+- Tasks will be agreed all together at the beginning of the coding week, the product owner (Alfredo) will decide which tasks have priority and define a list of subtasks
+- Developers, please (!), also create subtasks with completion time to track progress. Ideally each subtask falls into a 2, 4 or maximum 8 hours length.
+- A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
+
+
+### Code
+- Write your code with love and passion, someone (Alfredo ?), will read it.
+- Only PR features in a working state, rebase and test before commit. Don’t break others people builds.
+- Code is expected to be committed with proper title and description. Please follow the format already on the repository with  
+`[SECTION] Title (issue number if any) Sensible description of changes`  
+- Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
+- The maintainer (Alfredo) will validate the feature and let the code merge into the master branch after being agreed.
+- Code is linted
+
+
+
+### Data
+- Data is described as a JSON and shared in a file in the BE repo /*workloadName/data.jon*
+- Data is labelled as mutable / unmutabe
+- Data is backed up
+- Data is stored in the correct component
+- Data is postprocessed in case it needs to be reused
+- Data is consistent (success and error messages)
+
+### Endpoints
+- Endpoints are described as a JSON and shared in a file in the FE repo 
+- Endpoints are consistent (GET, POST, REMOVE, UPDATE)
+- Endpoints are tested
+- Endpoints have policies and are secure
+
+
+### Components FE
+- Components are tested
+- Components have wireframes
+- Components have defaultProps
+- Components are stateless as much as possible
+- Components are graphically perfect
+- Components handle data states (waiting for data, sending data, success and error)
+
+### Components BE
+A component is the code configuration and AWS Resources that together deliver against a requirement.
+- Components are chosen by following the 5 pillars of the AWS Well-Architected whitepaper
+- Components are tested
+- Components come whenever possible with a CloudFormation template
+
+### Monitoring
+- Every workload comes with a monitoring facility
+- Every workload comes with clear KPIs to allow monitoring
+- Monitoring is easy to acess and to be analised
+
+### Logs
+- Logs are stored and backed up
+- Wherever needed logs have to be auditable
+
+### Tests
+- Tests follow the BDD
+- Unit test are performed for each main function
+- Integration tests are performed for every service
+
+### Deployment
+- Deployment is split into development and production stages
+- Deployment is automated
+- Deployment happens if all the tests pass
+- Deployment is triggered by a change in the branch `live`
+
+### Policies and security
+### Costs
+### Risks
+### Backlog
+
+**[🔝 back to top](#table-of-contents)**
+
 
 ## Learning
 This section is aimed at listing some useful resources we have used to create this platform.   
@@ -166,6 +240,46 @@ Any developer can play with the code by following the steps:
 1. Create a button link somewhere in the project if you selected a new specific `path`
 
 **[🔝 back to top](#table-of-contents)**
+
+
+## Back end 
+The back end infrastructure is fully hosted on AWS. Here is a visual representation of all the used services.
+
+![BetterSpace Cloud Infrastructure](./Infrastructure-architecture.png)
+
+In chronological order, the client communicates with the back end using the following services:  
+
+- `Cloudfront`: it handles the dns requests, the SSL certificates and the different urls for the different companies
+- `S3`: it hosts the full website platform and it is accessible by everyone
+- `Cognito`: it manages the user authentication
+- `API Gateway`: it is the key point of contact for authenticated users, here the API nodes trigger the micro services that will store, get, modify or remove data from the database.
+- `DynamoDB`: NoSQL database, it stores the data in a format similar to JSON. API Gateway access the DynamoDB always via a Lambda function.
+- `Lambda Functions`: they are the key component of the micro services. They are triggered by many services in the infrastructure and can trigger additional services, modify and store data in the databases. API Gateway is always connected to DynamoDB via Lambda functions.
+- `CodePipeline`: this service helps the deployment of new code in differente stages (development and production ) by creating deployment steps. Once a new piece of code for the front end or for the back end is ready, it gets pushed to the GitHub repo. CodePipeline will pick the repo update and will deploy automatically the new code into a testing environment (currently hosted on team.betterspace.uk). The developers will be able to live test the new codebase and in case the code has no bugs and fullfills the requirements, CodePipeline will allow to push the code to the production stage where, and deployed to all the clients urls.
+- `IAM`: this service is used to create policies (access and restrictions to access data and services) that gets applied to all the different type of users and to each service.  
+- `AWS Organisations`:  the infrastructure is organised under this service that manages and monitors 3 physically separable accounts: a development account, a quality assurance (QA) account, and a production account. These three accounts are controlled by an admin account that performs business related tasks such as consolidated billing to monitor the spending of the three different accounts under the organisation and applies admin or super user restrictions and policies to the users in the organisation.
+
+The infrastructure uses 2 external services for payment and billing, `Stripe` and `Xero`.
+
+A new developer comes under ‘developers’ group in the development account and is given restricted access to services . These restrictions are applied either by an admin in the development account and/or by an admin in the organisation.
+
+**[🔝 back to top](#table-of-contents)**
+
+
+## Data
+The platform collects users data and stores it in `DynamoDB`.  
+It contains the following tables:  
+
+
+- `wellbeing assessment`: user wellbeing assessments
+- `wellbeing assessment update`: bi-monthly wellbeing assessment updates
+- `ratings`: transaction ratings
+- `profile`: user profiles
+- `analytics`: all the clicks of the user in the platform
+- `dashboard`: is a dynamic table that gets updated by lambda functions
+- `recommendationsDB`: the directory
+- `transactions`: user's transactions
+
 
 ## API
 The back end infrastructure talks to the front end via RESTful API (GET and POST requestes).  
@@ -248,41 +362,7 @@ The list of nodes available and it's functions are:
 
 **[🔝 back to top](#table-of-contents)**
 
-## Back end 
-The back end infrastructure is fully hosted on AWS. Here is a visual representation of all the used services.
-
-![BetterSpace Cloud Infrastructure](./Infrastructure-architecture.png)
-
-In chronological order, the client communicates with the back end using the following services:  
-
-- `Cloudfront`: it handles the dns requests, the SSL certificates and the different urls for the different companies
-- `S3`: it hosts the full website platform and it is accessible by everyone
-- `Cognito`: it manages the user authentication
-- `API Gateway`: it is the key point of contact for authenticated users, here the API nodes trigger the micro services that will store, get, modify or remove data from the database.
-- `DynamoDB`: NoSQL database, it stores the data in a format similar to JSON. API Gateway access the DynamoDB always via a Lambda function.
-- `Lambda Functions`: they are the key component of the micro services. They are triggered by many services in the infrastructure and can trigger additional services, modify and store data in the databases. API Gateway is always connected to DynamoDB via Lambda functions.
-- `CodePipeline`: this service helps the deployment of new code in differente stages (development and production ) by creating deployment steps. Once a new piece of code for the front end or for the back end is ready, it gets pushed to the GitHub repo. CodePipeline will pick the repo update and will deploy automatically the new code into a testing environment (currently hosted on team.betterspace.uk). The developers will be able to live test the new codebase and in case the code has no bugs and fullfills the requirements, CodePipeline will allow to push the code to the production stage where, and deployed to all the clients urls.
-- `IAM`: this service is used to create policies (access and restrictions to access data and services) that gets applied to all the different type of users and to each service.  
-- `AWS Organisations`:  the infrastructure is organised under this service that manages and monitors 3 physically separable accounts: a development account, a quality assurance (QA) account, and a production account. These three accounts are controlled by an admin account that performs business related tasks such as consolidated billing to monitor the spending of the three different accounts under the organisation and applies admin or super user restrictions and policies to the users in the organisation.
-
-The infrastructure uses 2 external services for payment and billing, `Stripe` and `Xero`.
-
-A new developer comes under ‘developers’ group in the development account and is given restricted access to services . These restrictions are applied either by an admin in the development account and/or by an admin in the organisation.
-
-**[🔝 back to top](#table-of-contents)**
 
 
-## Data
-The platform collects users data and stores it in `DynamoDB`.  
-It contains the following tables:  
-
-
-- `wellbeing assessment`: user wellbeing assessments
-- `wellbeing assessment update`: bi-monthly wellbeing assessment updates
-- `ratings`: transaction ratings
-- `profile`: user profiles
-- `analytics`: all the clicks of the user in the platform
-- `dashboard`: is a dynamic table that gets updated by lambda functions
-- `recommendationsDB`: the directory
-- `transactions`: user's transactions
-
+## Workloads
+We use the term workload to identify a set of components that together deliver business value. The workload is usually the level of detail that business and technology leaders communicate about.
