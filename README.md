@@ -34,7 +34,7 @@ This is the full documentation of the BetterSpace platform. This document is wri
     1. [Profile](#profile) 
     1. [PostSales](#postSales) 
     1. [Budget](#budget) 
-    1. [Monitoring](#monitoring) 
+    1. [Admin](#admin) 
     1. [Notifications](#notifications) 
     1. [Dashboard](#dashboard) 
 
@@ -379,3 +379,31 @@ The list of nodes available and it's functions are:
 
 ## Workloads
 We use the term workload to identify a set of components that together deliver business value. The workload is usually the level of detail that business and technology leaders communicate about.
+
+Colour schema:
+
+![gre](https://via.placeholder.com/15/478800/000000?text=+)  Happy
+
+![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+) Needs some work
+
+![red](https://via.placeholder.com/15/e31c23/000000?text=+) OH MY GOD WE ARE FUCKED
+
+### Login Signup
+
+
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
