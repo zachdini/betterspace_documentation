@@ -388,9 +388,8 @@ Colour schema:
 
 ![red](https://via.placeholder.com/15/e31c23/000000?text=+) OH MY GOD WE ARE FUCKED
 
+
 ### Login Signup
-
-
 
 | Lens                  | Urgency                                                     | Comments |
 | --------              |:-------------:                                              | ---------|
@@ -407,3 +406,193 @@ Colour schema:
 | Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
 | Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
 | Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+### Assessment
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Ratings
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Transactions
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+### Directory
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Profile
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### PostSales
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Budget
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Admin
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Notifications
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
+### Dashboard
+
+| Lens                  | Urgency                                                     | Comments |
+| --------              |:-------------:                                              | ---------|
+| Code FE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Code BE               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Endpoints             |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components FE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Components BE         |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Monitoring            |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Logs                  |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Tests                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Deployments           |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Policies              |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Costs                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Risks                 |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+| Backlog               |  ![yel](https://via.placeholder.com/15/e4ff4e/000000?text=+)|
+
+
