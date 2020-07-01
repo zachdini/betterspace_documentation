@@ -180,9 +180,22 @@ A component is the code configuration and AWS Resources that together deliver ag
 - Deployment is triggered by a change in the branch `live`
 
 ### Policies and security
+- Minimal access
+- Tested
+- Consitent
+
 ### Costs
+- Low cost
+- Predictable and predicted
+- Triggers alarms if the cost is higher than expected
+
 ### Risks
+- Every risk comes with severity (1 to 5)
+- Every risk comes with a mitigation plan
+
 ### Backlog
+- the backlog is always split between bugs, improvement and new feature
+
 
 **[🔝 back to top](#table-of-contents)**
 
