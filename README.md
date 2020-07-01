@@ -7,7 +7,7 @@ This is the full documentation of the BetterSpace platform. This document is wri
     1. [What is BetterSpace](#what-is-betterspace) 
     1. [User journey](#user-journey) 
 1. [Best Practices](#best-practices) 
-    1. [Code](#code)
+    <!-- 1. [Code](#code)
     1. [Data](#data)
     1. [Endpoints](#dendpoints)
     1. [Components](#components)
@@ -19,7 +19,7 @@ This is the full documentation of the BetterSpace platform. This document is wri
     1. [Policies and Security](#policies-and-security)
     1. [Costs](#costs)
     1. [Risks](#risks)
-    1. [Backlog](#backlog)
+    1. [Backlog](#backlog) -->
 1. [Learning](#learning) 
 1. [Front end overview](#front-end) 
 1. [Back end overview](#back-end) 
@@ -119,7 +119,7 @@ This documentation is written for developers, data scientists and any stakeholde
 - A demo will occur at the end of the week on Fridays to sync into the progress and decide the new steps.
 
 
-### Code
+#### Code
 - Write your code with love and passion, someone (Alfredo ?), will read it.
 - Only PR features in a working state, rebase and test before commit. Don’t break others people builds.
 - Code is expected to be committed with proper title and description. Please follow the format already on the repository with  
@@ -130,7 +130,7 @@ This documentation is written for developers, data scientists and any stakeholde
 
 
 
-### Data
+#### Data
 - Data is described as a JSON and shared in a file in the BE repo /*workloadName/data.jon*
 - Data is labelled as mutable / unmutabe
 - Data is backed up
@@ -138,14 +138,14 @@ This documentation is written for developers, data scientists and any stakeholde
 - Data is postprocessed in case it needs to be reused
 - Data is consistent (success and error messages)
 
-### Endpoints
+#### Endpoints
 - Endpoints are described as a JSON and shared in a file in the FE repo 
 - Endpoints are consistent (GET, POST, REMOVE, UPDATE)
 - Endpoints are tested
 - Endpoints have policies and are secure
 
 
-### Components FE
+#### Components FE
 - Components are tested
 - Components have wireframes
 - Components have defaultProps
@@ -153,47 +153,47 @@ This documentation is written for developers, data scientists and any stakeholde
 - Components are graphically perfect
 - Components handle data states (waiting for data, sending data, success and error)
 
-### Components BE
+#### Components BE
 A component is the code configuration and AWS Resources that together deliver against a requirement.
 - Components are chosen by following the 5 pillars of the AWS Well-Architected whitepaper
 - Components are tested
 - Components come whenever possible with a CloudFormation template
 
-### Monitoring
+#### Monitoring
 - Every workload comes with a monitoring facility
 - Every workload comes with clear KPIs to allow monitoring
 - Monitoring is easy to acess and to be analised
 
-### Logs
+#### Logs
 - Logs are stored and backed up
 - Wherever needed logs have to be auditable
 
-### Tests
+#### Tests
 - Tests follow the BDD
 - Unit test are performed for each main function
 - Integration tests are performed for every service
 
-### Deployment
+#### Deployment
 - Deployment is split into development and production stages
 - Deployment is automated
 - Deployment happens if all the tests pass
 - Deployment is triggered by a change in the branch `live`
 
-### Policies and security
+#### Policies and security
 - Minimal access
 - Tested
 - Consitent
 
-### Costs
+#### Costs
 - Low cost
 - Predictable and predicted
 - Triggers alarms if the cost is higher than expected
 
-### Risks
+#### Risks
 - Every risk comes with severity (1 to 5)
 - Every risk comes with a mitigation plan
 
-### Backlog
+#### Backlog
 - the backlog is always split between bugs, improvement and new feature
 
 
