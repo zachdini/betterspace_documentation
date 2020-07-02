@@ -127,6 +127,7 @@ This documentation is written for developers, data scientists and any stakeholde
 - Developers are expected to rebase their changes at least twice per week to avoid spending too much time resolving merge conflicts.
 - The maintainer (Alfredo) will validate the feature and let the code merge into the master branch after being agreed.
 - Code is linted
+- Automated tests should be written for the different scenarios in a PR.
 
 
 
